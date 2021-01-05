@@ -1,1 +1,0 @@
-execute at @s run summon armor_stand ~ ~ ~ {Small:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b}]}
