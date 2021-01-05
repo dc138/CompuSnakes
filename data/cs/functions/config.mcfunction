@@ -1,0 +1,3 @@
+tellraw @s [{"text":"-- ","color": "gray","bold": false},{"text":"<< ","color": "white","bold": false},{"text":"Compu","color": "aqua","bold": true},{"text":"Snakes","color": "dark_aqua","bold": true},{"text": " >> ","color": "white","bold": false},{"text": " --","color": "gray","bold": false}]
+tellraw @s [{"text": ""}]
+tellraw @s [{"text": "Pulse Interval ","color": "gray","bold": false},{"text": "(ticks)","color": "white","bold": false},{"text": ": ","color": "gray","bold": false},{"score": {"objective": "cs_pulse","name": "cs_pulse_interval"},"color": "gold","bold": true,"clickEvent": {"action": "suggest_command","value": "/scoreboard players set cs_pulse_interval cs_pulse 5"}}]
