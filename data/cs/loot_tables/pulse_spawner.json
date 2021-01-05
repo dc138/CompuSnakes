@@ -1,0 +1,59 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "silverfish_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Send ",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "PULSE ",
+                                    "color": "gold",
+                                    "bold": true,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "(",
+                                    "color": "gray",
+                                    "bold": false,
+                                    "italic": true
+                                },
+                                {
+                                    "score": {
+                                        "name": "@s",
+                                        "objective": "cs_pulse"
+                                    },
+                                    "color": "gray",
+                                    "bold": false,
+                                    "italic": true
+                                },
+                                {
+                                    "text": " ticks)",
+                                    "color": "gray",
+                                    "bold": false,
+                                    "italic": true
+                                }
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"pulse\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,8 +1,6 @@
-give @p silverfish_spawn_egg{EntityTag:{id:"minecraft:armor_stand",NoAI:1b,PersistenceRequired:0b,NoGravity:1b,Health:1,NoBasePlate:1b,Small:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Attributes:[{Name:"minecraft:generic.max_health",Base:1},{Name:"minecraft:generic.follow_range",Base:0},{Name:"minecraft:generic.knockback_resistance",Base:1d},{Name:"minecraft:generic.movement_speed",Base:0d}],Silent:1,Tags:["toggle"]},Enchantments:[{id:"silk_touch",lvl:1}],HideFlags:1,display:{Name:'[{"text":"Toggle ","italic":false,"color":"white"},{"text":"ON","color":"green","bold":true},{"text":"/","color":"white","bold":false},{"text":"OFF","color":"red","bold":true}]'}}
+loot give @s loot cs:toggle_spawner
 
-give @p silverfish_spawn_egg{EntityTag:{id:"minecraft:armor_stand",NoAI:1b,PersistenceRequired:0b,NoGravity:1b,Health:1,NoBasePlate:1b,Small:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Attributes:[{Name:"minecraft:generic.max_health",Base:1},{Name:"minecraft:generic.follow_range",Base:0},{Name:"minecraft:generic.knockback_resistance",Base:1d},{Name:"minecraft:generic.movement_speed",Base:0d}],Silent:1,Tags:["pulse5"]},Enchantments:[{id:"silk_touch",lvl:1}],HideFlags:1,display:{Name:'[{"text":"Send ","italic":false,"color":"white"},{"text":"PULSE","color":"gold","bold":true},{"text":" (5 ticks)","color":"gray","bold":false}]'}}
-
-give @p silverfish_spawn_egg{EntityTag:{id:"minecraft:armor_stand",NoAI:1b,PersistenceRequired:0b,NoGravity:1b,Health:1,NoBasePlate:1b,Small:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Attributes:[{Name:"minecraft:generic.max_health",Base:1},{Name:"minecraft:generic.follow_range",Base:0},{Name:"minecraft:generic.knockback_resistance",Base:1d},{Name:"minecraft:generic.movement_speed",Base:0d}],Silent:1,Tags:["pulse20"]},Enchantments:[{id:"silk_touch",lvl:1}],HideFlags:1,display:{Name:'[{"text":"Send ","italic":false,"color":"white"},{"text":"PULSE","color":"gold","bold":true},{"text":" (20 ticks)","color":"gray","bold":false}]'}}
-
+scoreboard players set @s cs_pulse 20
+loot give @s loot cs:pulse_spawner
 
 tellraw @a [{"text":"<< ","color": "white","bold": false},{"text":"Compu","color": "aqua","bold": true},{"text":"Snakes","color": "dark_aqua","bold": true},{"text": " >> ","color": "white","bold": false},{"text": "Tools given.","color": "gray","bold": false}]

@@ -1,0 +1,50 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "silverfish_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Toggle ",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "ON",
+                                    "color": "green",
+                                    "bold": true,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "/",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "OFF",
+                                    "color": "red",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"toggle\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

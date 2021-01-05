@@ -2,7 +2,6 @@ scoreboard objectives add cs_mode dummy
 scoreboard players set cs_globals cs_mode 1
 
 scoreboard objectives add cs_pulse dummy
-scoreboard players set cs_pulse_interval cs_pulse 5
 
 scoreboard objectives add cs_anticrash dummy
 scoreboard players set cs_globals cs_anticrash 0
