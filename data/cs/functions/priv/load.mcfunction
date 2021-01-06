@@ -1,5 +1,8 @@
 gamerule sendCommandFeedback false
 
+scoreboard objectives add cs_sps dummy
+scoreboard players set cs_globals cs_sps 1
+
 scoreboard objectives add cs_uses minecraft.used:minecraft.silverfish_spawn_egg
 scoreboard objectives add cs_uses_dummy dummy
 
