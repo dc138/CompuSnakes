@@ -1,0 +1,1 @@
+execute as @s[tag=cs_just_placed] run say test1

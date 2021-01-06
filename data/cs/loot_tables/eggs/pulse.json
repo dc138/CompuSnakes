@@ -49,7 +49,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"pulse\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"cs_pulse\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
                         }
                     ]
                 }

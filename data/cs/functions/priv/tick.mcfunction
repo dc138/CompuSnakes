@@ -2,7 +2,8 @@
 
 # Some special precations
 
-execute as @a run function cs:priv/precaution/ensure_set
+execute as @e[type=!player] run function cs:priv/precaution/scores/entities
+execute as @a run function cs:priv/precaution/scores/players
 execute as @a run function cs:priv/precaution/anticrash
 
 # Handle menus FIRST
@@ -12,9 +13,13 @@ execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sne
 
 scoreboard players set @a cs_uses 0
 
-# Handle toogles
+# Handle clocks
 
-execute as @e[type=armor_stand,tag=toggle] run function cs:priv/handle/toggle
+execute as @e[type=armor_stand,tag=cs_clock] run function cs:priv/handle/clock
+
+# Handle toggles
+
+execute as @e[type=armor_stand,tag=cs_toggle] run function cs:priv/handle/toggle
 
 # Advance and process snakes (this is a bit repetitive but is the only way to make it happen in a single tick, to my knowledge)
 
@@ -98,7 +103,7 @@ execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches
 
 # Handle pulses
 
-execute as @e[type=armor_stand,tag=pulse] run function cs:priv/handle/pulse
+execute as @e[type=armor_stand,tag=cs_pulse] run function cs:priv/handle/pulse
 
 # Handle special tags
 
