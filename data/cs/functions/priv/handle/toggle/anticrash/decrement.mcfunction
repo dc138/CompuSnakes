@@ -1,0 +1,2 @@
+execute unless score cs_globals_const cs_anticrash matches -2147483648..50 run scoreboard players remove cs_globals_const cs_anticrash 25
+title @s actionbar [{"text": "Anticrash ","color": "gray","bold": false},{"text": "threshold","color": "white","bold": true},{"text": ": ","color": "gray","bold": false},{"score": {"name": "cs_globals_const","objective": "cs_anticrash"},"color": "red","bold": true}]

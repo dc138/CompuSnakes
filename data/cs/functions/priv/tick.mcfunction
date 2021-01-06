@@ -8,7 +8,7 @@ execute as @a run function cs:priv/precaution/anticrash
 # Handle menus FIRST
 
 execute as @a if data entity @s SelectedItem.tag.CsPulseEgg if predicate cs:sneaking run function cs:priv/handle/pulse/interval/menu
-execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sneaking run function cs:priv/handle/toggle/sps/menu
+execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sneaking run function cs:priv/handle/toggle/cfg/menu
 
 scoreboard players set @a cs_uses 0
 
