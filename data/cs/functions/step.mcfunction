@@ -16,5 +16,4 @@ execute at @e[tag=off,type=armor_stand] run setblock ~ ~ ~ black_concrete
 
 # Handle pulses
 
-execute as @a if data entity @s SelectedItem.tag.CsPulseEgg if predicate cs:sneaking if predicate cs:scores/cs_first_menu_unset run function cs:priv/handle/pulse/interval
 execute as @e[type=armor_stand,tag=pulse] run function cs:priv/handle/pulse

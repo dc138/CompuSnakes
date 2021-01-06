@@ -12,13 +12,13 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "Send ",
+                                    "text": "Place ",
                                     "color": "white",
                                     "bold": false,
                                     "italic": false
                                 },
                                 {
-                                    "text": "PULSE ",
+                                    "text": "CLOCK ",
                                     "color": "gold",
                                     "bold": true,
                                     "italic": false
@@ -39,6 +39,21 @@
                                     "italic": true
                                 },
                                 {
+                                    "text": " tks every ",
+                                    "color": "gray",
+                                    "bold": false,
+                                    "italic": true
+                                },
+                                {
+                                    "score": {
+                                        "name": "@s",
+                                        "objective": "cs_clock_target"
+                                    },
+                                    "color": "gray",
+                                    "bold": false,
+                                    "italic": true
+                                },
+                                {
                                     "text": " tks)",
                                     "color": "gray",
                                     "bold": false,
@@ -49,7 +64,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"pulse\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"clock\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
                         }
                     ]
                 }

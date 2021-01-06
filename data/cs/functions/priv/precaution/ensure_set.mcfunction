@@ -1,0 +1,1 @@
+execute as @s unless score @s cs_uses matches -2147483648..2147483647 run scoreboard players set @s cs_uses 0
