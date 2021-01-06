@@ -12,44 +12,35 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "Send ",
+                                    "text": "Toggle ",
                                     "color": "white",
                                     "bold": false,
                                     "italic": false
                                 },
                                 {
-                                    "text": "PULSE ",
-                                    "color": "gold",
+                                    "text": "ON",
+                                    "color": "green",
                                     "bold": true,
                                     "italic": false
                                 },
                                 {
-                                    "text": "(",
-                                    "color": "gray",
+                                    "text": "/",
+                                    "color": "white",
                                     "bold": false,
-                                    "italic": true
+                                    "italic": false
                                 },
                                 {
-                                    "score": {
-                                        "name": "@s",
-                                        "objective": "cs_pulse"
-                                    },
-                                    "color": "gray",
-                                    "bold": false,
-                                    "italic": true
-                                },
-                                {
-                                    "text": " ticks)",
-                                    "color": "gray",
-                                    "bold": false,
-                                    "italic": true
+                                    "text": "OFF",
+                                    "color": "red",
+                                    "bold": true,
+                                    "italic": false
                                 }
                             ],
                             "entity": "this"
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"pulse\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1}"
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"toggle\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsToggleEgg:1b}"
                         }
                     ]
                 }
