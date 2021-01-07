@@ -1,0 +1,1 @@
+execute at @s[tag=cs_just_placed] align xyz run tp @s ~0.5 ~ ~0.5

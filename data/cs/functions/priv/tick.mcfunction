@@ -3,6 +3,7 @@
 # Some special precations
 
 execute as @e[type=!player] run function cs:priv/precaution/scores/entities
+execute as @e[type=!player] run function cs:priv/precaution/align
 execute as @a run function cs:priv/precaution/scores/players
 execute as @a run function cs:priv/precaution/anticrash
 
@@ -13,15 +14,20 @@ execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sne
 
 scoreboard players set @a cs_uses 0
 
-# Handle clocks
+# Handle clocks (no ticking though)
 
 execute as @e[type=armor_stand,tag=cs_clock] run function cs:priv/handle/clock
+
+# Handle pulses (no ticking though)
+
+execute as @e[type=armor_stand,tag=cs_pulse] run function cs:priv/handle/pulse
 
 # Handle toggles
 
 execute as @e[type=armor_stand,tag=cs_toggle] run function cs:priv/handle/toggle
 
 # Advance and process snakes (this is a bit repetitive but is the only way to make it happen in a single tick, to my knowledge)
+# Also tick clocks, pulses etc... in sync with everything else
 
 execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches 60..60 run function cs:step 
 execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches 59..60 run function cs:step 
@@ -100,10 +106,6 @@ execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches
 execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches 01..60 run function cs:step 
 
 execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches 01..60 run function cs:priv/precaution/anticrash
-
-# Handle pulses
-
-execute as @e[type=armor_stand,tag=cs_pulse] run function cs:priv/handle/pulse
 
 # Handle special tags
 
