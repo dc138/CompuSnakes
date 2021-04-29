@@ -7,7 +7,6 @@ scoreboard objectives add cs_uses minecraft.used:minecraft.silverfish_spawn_egg
 scoreboard objectives add cs_uses_dummy dummy
 
 scoreboard objectives add cs_mode dummy
-scoreboard players set cs_globals cs_mode 1
 
 scoreboard objectives add cs_pulse dummy
 scoreboard objectives add cs_pulse_target dummy

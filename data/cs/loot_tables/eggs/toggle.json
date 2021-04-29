@@ -71,7 +71,7 @@
                                         "text": "cable",
                                         "color": "white",
                                         "bold": true,
-                                        "italic": false 
+                                        "italic": false
                                     },
                                     {
                                         "text": ".",
@@ -135,6 +135,11 @@
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
                                     }
                                 ]
                             ]

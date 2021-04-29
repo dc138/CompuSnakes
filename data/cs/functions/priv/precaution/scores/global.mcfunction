@@ -1,0 +1,1 @@
+execute unless score cs_globals cs_mode matches 0..1 run scoreboard players set cs_globals cs_mode 1

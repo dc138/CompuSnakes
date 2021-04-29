@@ -12,37 +12,16 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "Send ",
+                                    "text": "Next ",
                                     "color": "white",
                                     "bold": false,
                                     "italic": false
                                 },
                                 {
-                                    "text": "PULSE ",
+                                    "text": "STEP",
                                     "color": "gold",
                                     "bold": true,
                                     "italic": false
-                                },
-                                {
-                                    "text": "(",
-                                    "color": "gray",
-                                    "bold": false,
-                                    "italic": true
-                                },
-                                {
-                                    "score": {
-                                        "name": "@s",
-                                        "objective": "cs_pulse_target"
-                                    },
-                                    "color": "gray",
-                                    "bold": false,
-                                    "italic": true
-                                },
-                                {
-                                    "text": " tks)",
-                                    "color": "gray",
-                                    "bold": false,
-                                    "italic": true
                                 }
                             ],
                             "entity": "this"
@@ -59,11 +38,11 @@
                                     {
                                         "text": "Use this egg to ",
                                         "color": "gray",
-                                        "italic": false,
-                                        "bold": false
+                                        "bold": false,
+                                        "italic": false
                                     },
                                     {
-                                        "text": "send",
+                                        "text": "run",
                                         "color": "white",
                                         "bold": true,
                                         "italic": false
@@ -71,34 +50,22 @@
                                 ],
                                 [
                                     {
-                                        "text": "a ",
+                                        "text": "the next ",
                                         "color": "gray",
-                                        "italic": false,
-                                        "bold": false
+                                        "bold": false,
+                                        "italic": false
                                     },
                                     {
-                                        "text": "pulse",
+                                        "text": "step",
                                         "color": "white",
-                                        "italic": false,
-                                        "bold": true
-                                    },
-                                    {
-                                        "text": " though a ",
-                                        "color": "gray",
-                                        "italic": false,
-                                        "bold": false
-                                    },
-                                    {
-                                        "text": "cable",
-                                        "color": "white",
-                                        "italic": false,
-                                        "bold": true
+                                        "bold": true,
+                                        "italic": false
                                     },
                                     {
                                         "text": ".",
                                         "color": "gray",
-                                        "italic": false,
-                                        "bold": false
+                                        "bold": false,
+                                        "italic": false
                                     }
                                 ],
                                 [
@@ -132,7 +99,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " to open",
+                                        "text": " to change",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
@@ -140,13 +107,13 @@
                                 ],
                                 [
                                     {
-                                        "text": "the ",
+                                        "text": "the stepping ",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
                                     },
                                     {
-                                        "text": "config",
+                                        "text": "mode",
                                         "color": "white",
                                         "bold": true,
                                         "italic": false
@@ -167,7 +134,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"cs_pulse\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"cs_next\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsStepEgg:1b}"
                         }
                     ]
                 }

@@ -1,3 +1,5 @@
+loot give @s loot cs:eggs/step
+
 scoreboard players set @s cs_uses 0
 loot give @s loot cs:eggs/toggle
 
