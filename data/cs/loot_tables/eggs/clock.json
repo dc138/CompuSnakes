@@ -27,8 +27,21 @@
                             "entity": "this"
                         },
                         {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "Lore TO DO.",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"cs_clock\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsPulseEgg:1b}"
+                            "tag": "{EntityTag:{id:\"minecraft:armor_stand\",NoAI:1b,NoGravity:1b,NoBasePlate:1b,Small:1b,Invisible:1b,Invulnerable:1b,Tags:[\"cs_clock\",\"cs_just_placed\"]},Enchantments:[{id:\"silk_touch\",lvl:1}],HideFlags:1,CsClockEgg:1b}"
                         }
                     ]
                 }
