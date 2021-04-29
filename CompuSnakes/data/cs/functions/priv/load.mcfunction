@@ -1,19 +1,14 @@
 gamerule sendCommandFeedback false
 
 scoreboard objectives add cs_sps dummy
-scoreboard players set cs_globals cs_sps 1
+scoreboard objectives add cs_mode dummy
+scoreboard objectives add cs_anticrash dummy
 
 scoreboard objectives add cs_uses minecraft.used:minecraft.silverfish_spawn_egg
 scoreboard objectives add cs_uses_dummy dummy
 
-scoreboard objectives add cs_mode dummy
-
 scoreboard objectives add cs_pulse dummy
 scoreboard objectives add cs_pulse_target dummy
-
-scoreboard objectives add cs_anticrash dummy
-scoreboard players set cs_globals cs_anticrash 0
-scoreboard players set cs_globals_const cs_anticrash 200
 
 scoreboard objectives add cs_clk_int dummy
 scoreboard objectives add cs_clk_int_tgt dummy
