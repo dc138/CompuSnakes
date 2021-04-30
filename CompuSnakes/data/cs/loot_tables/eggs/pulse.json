@@ -32,7 +32,7 @@
                                 {
                                     "score": {
                                         "name": "@s",
-                                        "objective": "cs_pulse_target"
+                                        "objective": "cs_pulse_tgt"
                                     },
                                     "color": "gray",
                                     "bold": false,
