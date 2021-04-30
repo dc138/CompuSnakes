@@ -11,8 +11,8 @@ execute as @a run function cs:priv/precaution/anticrash
 # Handle menus FIRST
 
 execute as @a if data entity @s SelectedItem.tag.CsPulseEgg if predicate cs:sneaking run function cs:priv/handle/pulse/interval/menu
-execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sneaking run function cs:priv/handle/config/menu
-execute as @a if data entity @s SelectedItem.tag.CsStepEgg if predicate cs:sneaking run function cs:priv/handle/config/mode/menu
+execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sneaking run function cs:priv/handle/toggle/menu
+execute as @a if data entity @s SelectedItem.tag.CsStepEgg if predicate cs:sneaking run function cs:priv/handle/step/menu
 
 scoreboard players set @a cs_uses 0
 
@@ -30,8 +30,7 @@ execute as @e[type=armor_stand,tag=cs_toggle] run function cs:priv/handle/toggle
 
 # Handle manual mode stepping
 
-execute if score cs_globals cs_mode matches 0 as @e[tag=cs_next,limit=1] run function cs:step
-execute at @e[tag=cs_next] run kill @e[distance=..0,limit=1]
+execute if score cs_globals cs_mode matches 0 as @e[type=armor_stand,tag=cs_step] run function cs:priv/handle/step
 
 # Advance and process snakes (this is a bit repetitive but is the only way to make it happen in a single tick, to my knowledge)
 # Also tick clocks, pulses etc... in sync with everything else
