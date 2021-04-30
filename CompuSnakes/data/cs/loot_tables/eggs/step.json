@@ -46,11 +46,17 @@
                                         "color": "white",
                                         "bold": true,
                                         "italic": false
+                                    },
+                                    {
+                                        "text": " the",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": "the next ",
+                                        "text": "next simulation ",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
@@ -107,19 +113,19 @@
                                 ],
                                 [
                                     {
-                                        "text": "the stepping ",
+                                        "text": "the ",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
                                     },
                                     {
-                                        "text": "mode",
+                                        "text": "config",
                                         "color": "white",
                                         "bold": true,
                                         "italic": false
                                     },
                                     {
-                                        "text": ".",
+                                        "text": " of this module.",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false

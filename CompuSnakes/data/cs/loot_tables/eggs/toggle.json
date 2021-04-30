@@ -58,11 +58,17 @@
                                         "color": "white",
                                         "bold": true,
                                         "italic": false
+                                    },
+                                    {
+                                        "text": " a",
+                                        "color": "gray",
+                                        "italic": false,
+                                        "bold": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": "a certain ",
+                                        "text": "certain snake ",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
@@ -111,7 +117,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " to open",
+                                        "text": " to change",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
@@ -131,7 +137,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": ".",
+                                        "text": " of this module.",
                                         "color": "gray",
                                         "bold": false,
                                         "italic": false
