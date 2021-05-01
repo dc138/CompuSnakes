@@ -1,0 +1,3 @@
+execute as @e[tag=cs_clock_editing] if score @s cs_clk_int_tgt matches 10..400 run scoreboard players remove @s cs_clk_int_tgt 5
+execute as @e[tag=cs_clock_editing] if score @s cs_clk_int_tgt <= @s cs_clk_pls_tgt run scoreboard players add @s cs_clk_int_tgt 5
+title @s actionbar [{"text": "Pulse ","color": "gray","bold": false,"italic": false},{"text": "interval","color": "white","bold": true,"italic": false},{"text": ": ","color": "gray","bold": false,"italic": false},{"score":{"name": "@e[tag=cs_clock_editing,limit=1]","objective": "cs_clk_int_tgt"},"color": "red","bold": true}]

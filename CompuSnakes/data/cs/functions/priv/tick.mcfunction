@@ -10,9 +10,9 @@ execute as @a run function cs:priv/precaution/anticrash
 
 # Handle menus FIRST
 
-execute as @a if data entity @s SelectedItem.tag.CsPulseCarrot if predicate cs:sneaking run function cs:priv/handle/pulse/interval/menu
-execute as @a if data entity @s SelectedItem.tag.CsToggleCarrot if predicate cs:sneaking run function cs:priv/handle/toggle/menu
-execute as @a if data entity @s SelectedItem.tag.CsStepCarrot if predicate cs:sneaking run function cs:priv/handle/step/menu
+execute as @a[scores={cs_uses=1..}] if data entity @s SelectedItem.tag.CsPulseCarrot if predicate cs:sneaking run function cs:priv/handle/pulse/menu
+execute as @a[scores={cs_uses=1..}] if data entity @s SelectedItem.tag.CsToggleCarrot if predicate cs:sneaking run function cs:priv/handle/toggle/menu
+execute as @a[scores={cs_uses=1..}] if data entity @s SelectedItem.tag.CsStepCarrot if predicate cs:sneaking run function cs:priv/handle/step/menu
 
 # Handle raycasting
 
