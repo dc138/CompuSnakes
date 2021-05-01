@@ -1,0 +1,56 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Place ",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "CLOCK",
+                                    "color": "gold",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "Lore TO DO.",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:1,CsClockCarrot:1b,Enchantments:[{id:\"silk_touch\",lvl:1}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

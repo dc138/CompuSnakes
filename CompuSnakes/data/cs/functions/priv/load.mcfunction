@@ -4,8 +4,9 @@ scoreboard objectives add cs_sps dummy
 scoreboard objectives add cs_mode dummy
 scoreboard objectives add cs_anticrash dummy
 
-scoreboard objectives add cs_uses minecraft.used:minecraft.silverfish_spawn_egg
+scoreboard objectives add cs_uses minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add cs_uses_dummy dummy
+scoreboard objectives add cs_ray_dst dummy
 
 scoreboard objectives add cs_pulse dummy
 scoreboard objectives add cs_pulse_tgt dummy

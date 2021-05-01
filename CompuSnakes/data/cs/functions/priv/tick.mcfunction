@@ -10,9 +10,21 @@ execute as @a run function cs:priv/precaution/anticrash
 
 # Handle menus FIRST
 
-execute as @a if data entity @s SelectedItem.tag.CsPulseEgg if predicate cs:sneaking run function cs:priv/handle/pulse/interval/menu
-execute as @a if data entity @s SelectedItem.tag.CsToggleEgg if predicate cs:sneaking run function cs:priv/handle/toggle/menu
-execute as @a if data entity @s SelectedItem.tag.CsStepEgg if predicate cs:sneaking run function cs:priv/handle/step/menu
+execute as @a if data entity @s SelectedItem.tag.CsPulseCarrot if predicate cs:sneaking run function cs:priv/handle/pulse/interval/menu
+execute as @a if data entity @s SelectedItem.tag.CsToggleCarrot if predicate cs:sneaking run function cs:priv/handle/toggle/menu
+execute as @a if data entity @s SelectedItem.tag.CsStepCarrot if predicate cs:sneaking run function cs:priv/handle/step/menu
+
+# Handle raycasting
+
+execute as @a if data entity @s SelectedItem.tag.CsPulseCarrot run function cs:priv/handle/pulse/raycast
+execute as @e[tag=cs_ray_pulse] run function cs:priv/handle/pulse/raycast/tick
+
+execute as @a if data entity @s SelectedItem.tag.CsToggleCarrot run function cs:priv/handle/toggle/raycast
+execute as @e[tag=cs_ray_toggle] run function cs:priv/handle/toggle/raycast/tick
+
+# Handle manual stepping
+
+execute as @a[scores={cs_uses=1..}] if score cs_globals cs_mode matches 0 if data entity @s SelectedItem.tag.CsStepCarrot unless predicate cs:sneaking run function cs:step
 
 scoreboard players set @a cs_uses 0
 
@@ -27,10 +39,6 @@ execute as @e[type=armor_stand,tag=cs_pulse] run function cs:priv/handle/pulse
 # Handle toggles
 
 execute as @e[type=armor_stand,tag=cs_toggle] run function cs:priv/handle/toggle
-
-# Handle manual mode stepping
-
-execute if score cs_globals cs_mode matches 0 as @e[type=armor_stand,tag=cs_step] run function cs:priv/handle/step
 
 # Advance and process snakes (this is a bit repetitive but is the only way to make it happen in a single tick, to my knowledge)
 # Also tick clocks, pulses etc... in sync with everything else

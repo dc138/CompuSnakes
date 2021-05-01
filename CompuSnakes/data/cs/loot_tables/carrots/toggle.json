@@ -1,0 +1,162 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Toggle ",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "ON",
+                                    "color": "green",
+                                    "bold": true,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "/",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "OFF",
+                                    "color": "red",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Use this egg to ",
+                                        "color": "gray",
+                                        "italic": false,
+                                        "bold": false
+                                    },
+                                    {
+                                        "text": "toggle",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " a",
+                                        "color": "gray",
+                                        "italic": false,
+                                        "bold": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "certain snake ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "cable",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Use ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "SHIFT",
+                                        "color": "gold",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " + ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "RC",
+                                        "color": "gold",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " to change",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "the ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "config",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " of this module.",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:1,CsToggleCarrot:1b,Enchantments:[{id:\"silk_touch\",lvl:1}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

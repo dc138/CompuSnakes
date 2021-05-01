@@ -1,0 +1,150 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Next ",
+                                    "color": "white",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "STEP",
+                                    "color": "gold",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Use this egg to ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "run",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " the",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "next simulation ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "step",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Use ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "SHIFT",
+                                        "color": "gold",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " + ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "RC",
+                                        "color": "gold",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " to change",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "the ",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "config",
+                                        "color": "white",
+                                        "bold": true,
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " of this module.",
+                                        "color": "gray",
+                                        "bold": false,
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:1,CsStepCarrot:1b,Enchantments:[{id:\"silk_touch\",lvl:1}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
