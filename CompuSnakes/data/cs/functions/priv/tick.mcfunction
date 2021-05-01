@@ -22,6 +22,9 @@ execute as @e[tag=cs_ray_pulse] run function cs:priv/handle/pulse/raycast/tick
 execute as @a if data entity @s SelectedItem.tag.CsToggleCarrot run function cs:priv/handle/toggle/raycast
 execute as @e[tag=cs_ray_toggle] run function cs:priv/handle/toggle/raycast/tick
 
+execute as @a if data entity @s SelectedItem.tag.CsClockCarrot run function cs:priv/handle/clock/raycast
+execute as @e[tag=cs_ray_clock] run function cs:priv/handle/clock/raycast/tick
+
 # Handle manual stepping
 
 execute as @a[scores={cs_uses=1..}] if score cs_globals cs_mode matches 0 if data entity @s SelectedItem.tag.CsStepCarrot unless predicate cs:sneaking run function cs:priv/step
