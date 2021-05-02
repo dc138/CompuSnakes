@@ -1,2 +1,2 @@
 execute unless score cs_globals cs_sps matches 60..2147483647 run scoreboard players add cs_globals cs_sps 1
-title @s actionbar [{"text": "Operations per ","color": "gray","bold": false},{"text": "tick","color": "white","bold": true},{"text": ": ","color": "gray","bold": false},{"score": {"name": "cs_globals","objective": "cs_sps"},"color": "green","bold": true}]
+title @s actionbar [{"text": "Snake ","color": "gray","bold": false},{"text": "speed","color": "white","bold": true},{"text": ": ","color": "gray","bold": false},{"score": {"name": "cs_globals","objective": "cs_sps"},"color": "green","bold": true}]

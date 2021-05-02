@@ -1,29 +1,15 @@
 # Handle ON
 
-execute at @s if block ~1 ~ ~ black_concrete run summon armor_stand ~1 ~ ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~1 ~ black_concrete run summon armor_stand ~ ~1 ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~ ~1 black_concrete run summon armor_stand ~ ~ ~1 {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~-1 ~ ~ black_concrete run summon armor_stand ~-1 ~ ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~-1 ~ black_concrete run summon armor_stand ~ ~-1 ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~ ~-1 black_concrete run summon armor_stand ~ ~ ~-1 {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-
-execute at @e[type=armor_stand,tag=cs_temp] if entity @e[type=armor_stand,tag=cs_on,distance=0] run kill @e[type=armor_stand,tag=cs_temp,distance=0]
-kill @e[type=armor_stand,tag=cs_toggle]
-
-tag @e[type=armor_stand,tag=cs_temp] add cs_on
-tag @e[type=armor_stand,tag=cs_temp] remove cs_temp
+execute if entity @s[tag=cs_just_placed_sync,tag=!cs_toggle_on] at @s if block ~ ~ ~ white_concrete run tag @s add cs_toggle_off
+execute if entity @s[tag=cs_just_placed_sync,tag=!cs_toggle_on] at @s if block ~ ~ ~ white_concrete run setblock ~ ~ ~ black_concrete
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_off] at @s if block ~ ~ ~ black_concrete run setblock ~ ~ ~ white_concrete
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_off] at @s if block ~ ~ ~ white_concrete run summon armor_stand ~ ~ ~ {Small: 1b, NoGravity: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["cs_off"]}
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_off] at @s if block ~ ~ ~ white_concrete run kill @s
 
 # Handle OFF
 
-execute at @s if block ~1 ~ ~ white_concrete run summon armor_stand ~1 ~ ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~1 ~ white_concrete run summon armor_stand ~ ~1 ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~ ~1 white_concrete run summon armor_stand ~ ~ ~1 {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~-1 ~ ~ white_concrete run summon armor_stand ~-1 ~ ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~-1 ~ white_concrete run summon armor_stand ~ ~-1 ~ {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-execute at @s if block ~ ~ ~-1 white_concrete run summon armor_stand ~ ~ ~-1 {Invulnerable: 1b, NoBasePlate: 1b, NoGravity: 1b, Small: 1b, Tags: ["cs_temp"], Invisible: 1b}
-
-execute at @e[type=armor_stand,tag=cs_temp] if entity @e[type=armor_stand,tag=cs_off,distance=0] run kill @e[type=armor_stand,tag=cs_temp,distance=0]
-kill @e[type=armor_stand,tag=cs_toggle]
-
-tag @e[type=armor_stand,tag=cs_temp] add cs_off
-tag @e[type=armor_stand,tag=cs_temp] remove cs_temp
+execute if entity @s[tag=cs_just_placed_sync,tag=!cs_toggle_off] at @s if block ~ ~ ~ black_concrete run tag @s add cs_toggle_on
+execute if entity @s[tag=cs_just_placed_sync,tag=!cs_toggle_off] at @s if block ~ ~ ~ black_concrete run setblock ~ ~ ~ white_concrete
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_on] at @s if block ~ ~ ~ white_concrete run setblock ~ ~ ~ black_concrete
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_on] at @s if block ~ ~ ~ black_concrete run summon armor_stand ~ ~ ~ {Small: 1b, NoGravity: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["cs_on"]}
+execute if entity @s[tag=!cs_just_placed_sync,tag=cs_toggle_on] at @s if block ~ ~ ~ black_concrete run kill @s
