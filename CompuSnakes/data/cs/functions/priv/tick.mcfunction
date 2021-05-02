@@ -29,7 +29,6 @@ execute as @e[tag=cs_ray_clock] run function cs:priv/handle/clock/raycast/tick
 
 execute as @a[scores={cs_uses=1..}] if score cs_globals cs_mode matches 0 if data entity @s SelectedItem.tag.CsStepCarrot unless predicate cs:sneaking run function cs:priv/step/once
 execute as @a[scores={cs_uses=1..}] if score cs_globals cs_mode matches 0 if data entity @s SelectedItem.tag.CsStepCarrot unless predicate cs:sneaking run function cs:priv/step
-execute as @a[scores={cs_uses=1..}] if score cs_globals cs_mode matches 0 if data entity @s SelectedItem.tag.CsStepCarrot unless predicate cs:sneaking run tag @e[type=armor_stand,tag=cs_just_placed_sync] remove cs_just_placed_sync
 
 scoreboard players set @a cs_uses 0
 
@@ -126,5 +125,4 @@ execute if score cs_globals cs_mode matches 1 if score cs_globals cs_sps matches
 
 # Handle special tags
 
-execute if score cs_globals cs_mode matches 1 run tag @e[type=armor_stand,tag=cs_just_placed_sync] remove cs_just_placed_sync
 tag @e[type=armor_stand,tag=cs_just_placed] remove cs_just_placed
