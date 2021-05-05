@@ -8,5 +8,8 @@ execute at @s[tag=cs_just_placed] run summon armor_stand ~ ~-0.65 ~ {Invulnerabl
 
 execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run kill @e[tag=cs_clock_deco,limit=1,sort=furthest,dy=-0.65,distance=..1]
 execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run kill @e[tag=cs_clock_title,distance=0,limit=1,sort=nearest]
+execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run tag @e[tag=cs_clock_highlight,distance=0,limit=1,sort=nearest] add cs_clock_death
+execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run tp @e[tag=cs_clock_death] 0 10000 0
+execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run kill @e[tag=cs_clock_death]
 execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run kill @e[tag=cs_pulse,limit=1,sort=nearest,distance=0]
 execute at @s[tag=!cs_just_placed] unless block ~ ~ ~ green_stained_glass run kill @s
